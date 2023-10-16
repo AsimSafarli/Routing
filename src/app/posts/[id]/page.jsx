@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
     description: post.body,
   };
 }
-const BlogPost = async ({ params }) => {
+const PostDetail = async ({ params }) => {
   const data = await getData(params.id);
   return (
     <div className="flex flex-col ">
@@ -29,4 +29,4 @@ const BlogPost = async ({ params }) => {
   );
 };
 
-export default BlogPost;
+export default PostDetail;
